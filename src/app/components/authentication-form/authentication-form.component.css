@@ -1,0 +1,302 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #dd1144;
+  border-radius: 10px;
+  outline: 1px dashed white;
+  outline-offset: -10px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #000024;
+}
+
+.field{
+  text-align: center;
+}
+
+label {
+  color: #000024;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+.button {
+  text-align: center;
+}
+
+.error-message{
+  text-align: center;
+  color: darkred;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) and (max-height: 899px){
+  :host {
+    width: 240px;
+  }
+
+  .form-content {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .field{
+    margin: 8px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+  .check {
+    margin-top: 5px;
+  }
+  label {
+    font-size: 11px;
+  }
+  #sign-in {
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  #sign-up {
+    margin-bottom: 5px;
+    margin-top: 3px;
+  }
+
+  .error-message{
+    padding: 3px;
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .btn {
+    font-size: 14px;
+
+  }
+}
+
+@media screen and (min-height: 1200px){
+  :host {
+    width: 600px;
+    height: 800px;
+  }
+  .form-content {
+    padding: 100px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+
+  .field{
+    margin: 20px;
+    text-align: center;
+  }
+  input {
+    font-size: 26px;
+  }
+
+  .check {
+    margin-top: 15px;
+  }
+  label {
+    font-size: 24px;
+  }
+  #sign-in {
+    margin-top: 20px;
+    margin-bottom: 3px;
+  }
+
+  #sign-up {
+    margin-bottom: 20px;
+    margin-top: 3px;
+  }
+
+  .error-message{
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 26px;
+    width: 300px;
+    height: 60px;
+  }
+
+
+  @media screen and (max-width: 760px){
+    :host {
+      width: 70%;
+      min-width: 500px;
+    }
+  }
+
+}
+
+@media screen and (min-height: 900px) and (max-height: 1199px){
+  :host {
+    width: 400px;
+    height: 600px;
+  }
+  .form-content {
+    padding: 100px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .field{
+    margin: 15px;
+  }
+  input {
+    font-size: 21px;
+  }
+
+  .check {
+    margin-top: 15px;
+  }
+  label {
+    font-size: 18px;
+  }
+  #sign-in {
+    margin-top: 15px;
+    margin-bottom: 3px;
+  }
+
+  #sign-up {
+    margin-bottom: 15px;
+    margin-top: 3px;
+  }
+
+  .error-message{
+    padding: 5px;
+    font-size: 25px;
+  }
+
+  .btn {
+    font-size: 20px;
+    width: 250px;
+
+  }
+
+  @media screen and (max-width: 760px){
+    :host {
+      min-width: 400px;
+    }
+  }
+}
+
+@media screen and (min-height: 600px) and (max-height: 899px) and (min-width: 500px){
+  .form-content {
+    padding: 50px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .field{
+    margin: 10px;
+  }
+
+  .check {
+    margin-top: 5px;
+  }
+  label {
+    font-size: 15px;
+  }
+  #sign-in {
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  #sign-up {
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+
+  .error-message{
+    padding: 3px;
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-height: 599px)  {
+  :host {
+    width: 400px;
+    height: 300px;
+  }
+
+  .form-content {
+    padding: 50px;
+  }
+
+  .title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .field{
+    margin: 6px;
+  }
+
+  .check {
+    margin-top: 5px;
+  }
+  label {
+    font-size: 12px;
+  }
+  #sign-in {
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+
+  #sign-up {
+    margin-top: 3px;
+    margin-left: 5px;;
+  }
+
+  .error-message{
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+}
+
+
+
+

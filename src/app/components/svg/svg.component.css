@@ -1,0 +1,12 @@
+:host {
+  box-shadow: #dd1144 0 0 15px;
+  margin: 0 20px;
+}
+
+svg text {
+  font-family: 'Century Gothic', serif;
+  fill: white;
+  font-size: 10pt;
+}
+
+

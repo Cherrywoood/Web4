@@ -1,0 +1,24 @@
+table {
+  border: 3px solid #dd1144;
+  width: 100%;
+  word-break: break-all;
+  text-align: center;
+  table-layout: fixed;
+}
+table td, th {
+  border: 2px solid #dd1144;
+}
+table th {
+  background: #dd1144;
+  color: white;
+  height: 30px;
+}
+table td {
+  font-weight: bold;
+  color: gray;
+  padding: 2px;
+}
+
+table tr {
+  background: white;
+}

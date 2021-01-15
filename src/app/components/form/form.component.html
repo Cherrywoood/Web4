@@ -1,0 +1,21 @@
+<form [formGroup]="form" novalidate (ngSubmit)="submit()">
+  <div class="form-content">
+    <div class="coordinate" id="x">
+      <label>X: <input name="x" formControlName="xField" placeholder="[-5,5]"></label>
+    </div>
+    <div class="coordinate" id="y">
+      <label>Y: {{form.controls['yField'].value}}</label><br>
+      <div class="slider">
+        <p-slider [min]="-3" [max]="5" [step]="0.5" formControlName="yField"></p-slider>
+      </div>
+    </div>
+    <div class="coordinate" id="r">
+      <label>R: <input name="r" formControlName="rField" placeholder="[1,5]"></label>
+    </div>
+    <div class="button">
+      <button id='send' class="btn border" [disabled]="form.invalid">
+        SEND
+      </button>
+    </div>
+  </div>
+</form>

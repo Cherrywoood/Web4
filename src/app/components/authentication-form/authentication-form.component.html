@@ -1,0 +1,28 @@
+<form [formGroup]="form" novalidate>
+  <div class="form-content">
+    <div class="title">
+      <span>REGISTRATION
+      <br> & <br>
+      AUTHENTICATION</span>
+    </div>
+    <div class="field">
+      <input formControlName="login" name="login" placeholder="LOGIN">
+    </div>
+    <div class="field">
+      <input [attr.type]="type" formControlName="password" name="password" placeholder="PASSWORD"><br>
+      <label><input type="checkbox" (click)="show_hide_password()"
+                    formControlName="check" class="check"> Показать пароль</label>
+    </div>
+    <div class="error-message" *ngIf="error">
+      {{error}}
+    </div>
+    <div class="buttons-container">
+      <div id="sign-in" class="button">
+        <button id='auth' class="btn border" [disabled]="form.invalid" (click)="signIn()">SIGN IN </button>
+      </div>
+      <div id="sign-up" class="button">
+        <button id='reg' class="btn border" [disabled]="form.invalid" (click)="signUp()">SIGN UP</button>
+      </div>
+    </div>
+  </div>
+</form>

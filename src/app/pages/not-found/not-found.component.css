@@ -1,0 +1,142 @@
+.content {
+  background:  linear-gradient(rgba(0, 0, 36, 0.7), rgba(0, 0, 36, 0.7)), url(src/assets/stars.png) repeat center top;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  color: #dd1144;
+  height: 100%;
+  width: 100%;
+  min-height: 500px;
+  min-width: 300px;
+}
+.message {
+  margin: 5px;
+  padding: 0 20px;
+  min-width: 200px;
+}
+img{
+  margin: 5px;
+  padding: 0 20px;
+  min-width: 200px;
+}
+h1 {
+
+  font-size: 120px;
+  font-weight:bold;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color, width 0.2s ease;
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  color: #dd1144;
+}
+
+.btn.border {
+  border: 2px solid #dd1144;
+}
+.btn.border:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #dd1144;
+  z-index: -1;
+  transition: background-color,width 0.2s ease;
+}
+
+.btn.border:hover {
+  background: #dd1144;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.btn.border:hover:before {
+  width: 100%;
+}
+.btn.border:active {
+  border-color: white;
+}
+
+@media screen and (min-width: 1440px){
+  h1 {
+
+    font-size: 140px;
+    font-weight:bold;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 34px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  img{
+    width: 400px;
+  }
+
+
+  .btn {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .message {
+    text-align: center;
+  }
+   .content {
+     flex-flow: column;
+   }
+  .message {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  img{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 420px) {
+  h1 {
+
+    font-size: 100px;
+    font-weight:bold;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+

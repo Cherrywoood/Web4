@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="link-content">
+    <span (click)="logOut()">CLOSE SESSION</span>
+  </div>
+  <div class="table-and-form">
+    <div class="svg-and-form">
+      <app-svg #svg></app-svg>
+      <app-form (radius)="changeRadius($event)"></app-form>
+    </div>
+    <app-table></app-table>
+  </div>
+</div>

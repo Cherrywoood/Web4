@@ -1,0 +1,142 @@
+header {
+  width: 100%;
+  color: white;
+}
+
+a {
+  text-decoration:none;
+  color: #dd1144;
+  font-weight: bold;
+}
+
+
+@media screen and (min-height: 1000px) {
+  header {
+    height: 160px;
+  }
+  .text {
+    font-size: 40px;
+   padding-top: 20px;
+    padding-left: 20px;
+
+  }
+
+  a:hover {
+    font-size: 41px;
+  }
+
+  @media screen and (min-width: 760px) and (max-width: 1170px) {
+    .text {
+      font-size: 35px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    a:hover {
+      font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .text {
+      font-size: 27px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    a:hover {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (min-height: 700px) and (max-height: 999px) {
+  header {
+    height: 120px;
+  }
+
+  .text {
+    font-size: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  a:hover {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 760px) and (max-width: 1170px) {
+    .text {
+      font-size: 28px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    a:hover {
+      font-size: 29px;
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 760px) {
+    .text {
+      font-size: 27px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    a:hover {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .text {
+      font-size: 24px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    a:hover {
+      font-size: 25px;
+    }
+  }
+
+}
+
+@media screen and (min-height: 500px) and (max-height: 699px){
+  header {
+    height: 90px;
+  }
+
+  .text {
+    font-size: 23px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  a:hover {
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (max-height: 499px) {
+  header {
+    height: 80px;
+  }
+
+  .text {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  a:hover {
+    font-size: 21px;
+  }
+
+}
+
+@media screen and (max-height: 699px) and (max-width: 500px){
+  .text {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+  a:hover {
+    font-size: 16px;
+  }
+}

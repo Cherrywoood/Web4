@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-width: 300px;
+  background: #dd1144;
+  border-radius: 10px;
+  outline: 1px dashed white;
+  outline-offset: -10px;
+
+  margin: 20px 20px;
+}
+
+form label {
+  color: white;
+}
+
+.form-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.coordinate {
+  margin: 5px;
+}
+
+.slider {
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 10%;
+}
+
+.button {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+

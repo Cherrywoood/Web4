@@ -1,0 +1,18 @@
+<table>
+  <thead>
+  <tr>
+    <th>X</th>
+    <th>Y</th>
+    <th>R</th>
+    <th>Result</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let point of points">
+    <td>{{point.x | number:'1.0-4'}}</td>
+    <td>{{point.y | number: '1.0-4'}}</td>
+    <td>{{point.r | number:'1.0-4'}}</td>
+    <td>{{point.result}}</td>
+  </tr>
+  </tbody>
+</table>

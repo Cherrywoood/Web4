@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+
+
+input, button {
+  border: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  background: none;
+  letter-spacing: 2px;
+}
+
+input {
+  font-family: 'Century Gothic', serif;
+  border-bottom: solid 3px #000024;
+  padding: 5px;
+  color: white;
+}
+
+input::-webkit-input-placeholder {
+  font-family: 'Century Gothic', serif;
+  color: white;
+}
+
+input::-moz-placeholder {
+  font-family: 'Century Gothic', serif;
+  color: white;
+}
+
+input:-moz-placeholder {
+  font-family: 'Century Gothic', serif;
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  font-family: 'Century Gothic', serif;
+  color: white;
+}
+
+input.ng-dirty.ng-invalid {
+  border-bottom: solid darkred;
+}
+
+input.ng-dirty.ng-valid {
+  border-bottom: solid darkolivegreen;
+}
+
+form input:hover {
+  border-color:indigo;
+}
+
+form button:disabled {
+opacity: 70%;
+}
+
+form .btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color, width 0.2s ease;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  width: 150px;
+}
+
+form .btn.border {
+  border: 2px solid #000024;
+}
+form .btn.border:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #000024;
+  z-index: -1;
+  transition: background-color,width 0.2s ease;
+}
+
+form .btn.border:hover {
+  background: #000024;
+  transition: 0.2s ease;
+}
+
+form .btn.border:hover:before {
+  width: 100%;
+}
+form .btn.border:active {
+  border-color: indigo;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+
+body {
+  letter-spacing: 2px;
+  font-family: 'Century Gothic', serif;
+  background:  #000024;
+}
+
+
+
