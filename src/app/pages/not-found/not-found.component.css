@@ -1,10 +1,10 @@
 .content {
-  background:  linear-gradient(rgba(0, 0, 36, 0.7), rgba(0, 0, 36, 0.7)), url(src/assets/stars.png) repeat center top;
+  background:  linear-gradient(rgba(49,29,63, 0.7), rgba(49,29,63, 0.7)), url(src/assets/stars.png) repeat center top;
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  color: #dd1144;
+  color: #E84545;
   height: 100%;
   width: 100%;
   min-height: 500px;
@@ -47,11 +47,11 @@ p {
   font-weight: bold;
   padding: 10px;
   width: 150px;
-  color: #dd1144;
+  color: #E84545;
 }
 
 .btn.border {
-  border: 2px solid #dd1144;
+  border: 2px solid #E84545;
 }
 .btn.border:before {
   content: "";
@@ -60,13 +60,13 @@ p {
   top: 0;
   width: 0;
   height: 100%;
-  background: #dd1144;
+  background:#E84545;
   z-index: -1;
   transition: background-color,width 0.2s ease;
 }
 
 .btn.border:hover {
-  background: #dd1144;
+  background: #E84545;
   color: white;
   transition: 0.2s ease;
 }

@@ -5,13 +5,13 @@ header {
 
 a {
   text-decoration:none;
-  color: #dd1144;
+  color: #E23E57;
   font-weight: bold;
 }
 
 select {
   outline: none;
-  background: #000024;
+  background: #311D3F;
   color: white;
   font-family: 'Arial', serif;
   padding: 0 5px;
@@ -31,11 +31,11 @@ label {
       font-size: 35px;
     }
     select {
-      font-size: 25px;
+      font-size: 30px;
       width: 250px;
     }
     label {
-      font-size: 25px;
+      font-size: 30px;
     }
     .text {
       padding-top: 20px;
@@ -99,37 +99,40 @@ label {
 }
 
 @media screen and (max-width: 759px){
+  a{
+    color: #311D3F;
+  }
+  header {
+    background: #E23E57;
+  }
+  .text {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .select {
+    padding: 5px 5px 10px;
+  }
+
   @media screen and (min-height: 1200px) {
     header {
       font-size: 27px;
-      background: #dd1144;
     }
     select {
-      font-size: 24px;
+      font-size: 27px;
       width: 175px;
     }
     label {
-      font-size: 24px;
-    }
-    .text {
-      padding-top: 14px;
-      text-align: center;
-    }
-    a{
-      color: #000024;
+      font-size: 27px;
     }
     a:hover {
       font-size: 28px;
     }
-    .select {
-      text-align: center;
-      padding: 5px 0;
-    }
+
   }
   @media screen and (min-height: 900px) and (max-height: 1199px) {
     header {
-      font-size: 22px;
-      background: #dd1144;
+      font-size: 18px;
     }
     select {
       font-size: 18px;
@@ -138,105 +141,24 @@ label {
     label {
       font-size: 18px;
     }
-    .text {
-      padding-top: 14px;
-      text-align: center;
-    }
-    a{
-      color: #000024;
-    }
-    a:hover {
-      font-size: 23px;
-    }
-    .select {
-      text-align: center;
-      padding: 5px 0;
-    }
-  }
-  @media screen and (max-height: 899px) {
-    header {
-      font-size: 18px;
-      background: #dd1144;
-    }
-    select {
-      font-size: 16px;
-      width: 125px;
-    }
-    label {
-      font-size: 16px;
-    }
-    .text {
-      padding-top: 10px;
-      text-align: center;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-    a{
-      color: #000024;
-    }
     a:hover {
       font-size: 19px;
     }
-    .select {
-      text-align: center;
-      padding: 5px 0;
-    }
-  }
-}
 
-@media screen and (max-width: 600px){
-  @media screen and (min-height: 1200px) {
-    header {
-      font-size: 25px;
-      background: #dd1144;
-    }
-    select {
-      font-size: 20px;
-      width: 120px;
-    }
-    label {
-      font-size: 20px;
-    }
-    .text {
-      padding-top: 14px;
-      text-align: center;
-    }
-    a{
-      color: #000024;
-    }
-    a:hover {
-      font-size: 26px;
-    }
-    .select {
-      text-align: center;
-      padding: 5px 0;
-    }
   }
-  @media screen and (max-height: 1199px) {
+  @media screen and (max-height: 899px) {
     header {
-      font-size:17px;
-      background: #dd1144;
+      font-size:15px;
     }
     select {
-      font-size: 13px;
+      font-size: 15px;
       width: 100px;
     }
     label {
-      font-size: 13px;
-    }
-    .text {
-      padding-top: 14px;
-      text-align: center;
-    }
-    a{
-      color: #000024;
+      font-size: 15px;
     }
     a:hover {
-      font-size: 18px;
-    }
-    .select {
-      text-align: center;
-      padding: 5px 0;
+      font-size: 16px;
     }
   }
 }

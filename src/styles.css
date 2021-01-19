@@ -55,7 +55,7 @@ input, button {
 
 input {
   font-family: 'Arial', serif;
-  border-bottom: solid 3px #000024;
+  border-bottom: solid 3px #311D3F;
   padding: 5px;
   color: white;
 }
@@ -85,11 +85,11 @@ input.ng-dirty.ng-invalid {
 }
 
 input.ng-dirty.ng-valid {
-  border-bottom: solid darkolivegreen;
+  border-bottom: solid #1D3F33;
 }
 
 form input:hover {
-  border-color:indigo;
+  border-color:#903749;
 }
 
 form button:disabled {
@@ -111,7 +111,7 @@ form .btn {
 }
 
 form .btn.border {
-  border: 2px solid #000024;
+  border: 2px solid #311D3F;
 }
 form .btn.border:before {
   content: "";
@@ -120,13 +120,13 @@ form .btn.border:before {
   top: 0;
   width: 0;
   height: 100%;
-  background: #000024;
+  background: #311D3F;
   z-index: -1;
   transition: background-color,width 0.2s ease;
 }
 
 form .btn.border:hover {
-  background: #000024;
+  background: #311D3F;
   transition: 0.2s ease;
 }
 
@@ -134,7 +134,7 @@ form .btn.border:hover:before {
   width: 100%;
 }
 form .btn.border:active {
-  border-color: indigo;
+  border-color: #903749;
 }
 table {
   border-collapse: collapse;
@@ -150,7 +150,7 @@ table {
 body {
   letter-spacing: 2px;
   font-family: 'Arial', serif;
-  background:  #000024;
+  background:  #311D3F;
 }
 
 

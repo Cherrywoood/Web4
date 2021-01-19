@@ -50,9 +50,9 @@ export class SvgComponent implements OnInit, OnDestroy{
       circle.setAttribute('cx', String(x));
       circle.setAttribute('cy', String(y));
       circle.setAttribute('r', '3');
-      circle.setAttribute('stroke', '#000024');
+      circle.setAttribute('stroke', '#311D3F');
       if (point.result) {
-        circle.setAttribute('fill', 'darkolivegreen');
+        circle.setAttribute('fill', '#1D3F33');
       }
       if (!point.result) {
         circle.setAttribute('fill', 'red');

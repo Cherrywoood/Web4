@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #dd1144;
+  background: #E23E57;
   border-radius: 10px;
   outline: 1px dashed white;
   outline-offset: -10px;
@@ -24,7 +24,7 @@ form {
 }
 
 .title {
-  color: #000024;
+  color: #311D3F;
 }
 
 .field {
@@ -32,7 +32,7 @@ form {
 }
 
 label {
-  color: #000024;
+  color: #311D3F;
 }
 
 .title {
@@ -221,19 +221,16 @@ label {
 
 @media screen and (max-width: 759px) {
   :host{
-    background: #dd1144;
     border-radius: 0;
     outline: none;
     outline-offset: 0;
     margin-top: 5px;
-    border-top: 1px white solid;
   }
 
   @media screen and (min-height: 1200px) {
     :host {
       width: 100%;
       min-width: 500px;
-      margin: 0;
     }
 
     .form-content {
@@ -294,7 +291,6 @@ label {
     :host {
       width: 100%;
       min-width: 300px;
-      margin: 0;
     }
 
     .form-content {
@@ -351,12 +347,10 @@ label {
       width: 100%;
     }
   }
-
   @media screen and (max-height: 799px) {
     :host {
       width: 100%;
       min-width: 300px;
-      margin: 0;
     }
 
     .form-content {
@@ -389,12 +383,12 @@ label {
 
     #sign-in {
       margin-top: 8px;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
     #sign-up {
       margin-bottom: 8px;
-      margin-top: 2px;
+      margin-top: 3px;
     }
 
     .error-message {

@@ -11,14 +11,14 @@
 }
 
 span {
-  color: #dd1144;
+  color: #E84545;
   font-size: 30px;
   padding: 0 5px;
 }
 
 span:hover {
-  color: indigo;
-  border-bottom: 2px indigo solid;
+  color: #903749;
+  border-bottom: 2px #903749 solid;
   font-size: 31px;
 }
 .svg-and-form {

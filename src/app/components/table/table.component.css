@@ -1,15 +1,15 @@
 table {
-  border: 3px solid #dd1144;
+  border: 3px solid #E84545;
   width: 100%;
   word-break: break-all;
   text-align: center;
   table-layout: fixed;
 }
 table td, th {
-  border: 2px solid #dd1144;
+  border: 2px solid #E84545;
 }
 table th {
-  background: #dd1144;
+  background: #E84545;
   color: white;
   height: 30px;
 }
