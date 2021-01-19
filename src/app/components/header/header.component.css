@@ -101,16 +101,15 @@ label {
 @media screen and (max-width: 759px){
   @media screen and (min-height: 1200px) {
     header {
-      height: 220px;
-      font-size: 30px;
+      font-size: 27px;
       background: #dd1144;
     }
     select {
-      font-size: 25px;
+      font-size: 24px;
       width: 175px;
     }
     label {
-      font-size: 25px;
+      font-size: 24px;
     }
     .text {
       padding-top: 14px;
@@ -120,7 +119,7 @@ label {
       color: #000024;
     }
     a:hover {
-      font-size: 31px;
+      font-size: 28px;
     }
     .select {
       text-align: center;
@@ -129,13 +128,12 @@ label {
   }
   @media screen and (min-height: 900px) and (max-height: 1199px) {
     header {
-      height: 170px;
       font-size: 22px;
       background: #dd1144;
     }
     select {
       font-size: 18px;
-      width: 175px;
+      width: 140px;
     }
     label {
       font-size: 18px;
@@ -157,7 +155,6 @@ label {
   }
   @media screen and (max-height: 899px) {
     header {
-      height: 120px;
       font-size: 18px;
       background: #dd1144;
     }
@@ -190,13 +187,12 @@ label {
 @media screen and (max-width: 600px){
   @media screen and (min-height: 1200px) {
     header {
-      height: 190px;
       font-size: 25px;
       background: #dd1144;
     }
     select {
       font-size: 20px;
-      width: 175px;
+      width: 120px;
     }
     label {
       font-size: 20px;
@@ -218,13 +214,12 @@ label {
   }
   @media screen and (max-height: 1199px) {
     header {
-      height: 140px;
       font-size:17px;
       background: #dd1144;
     }
     select {
       font-size: 13px;
-      width: 175px;
+      width: 100px;
     }
     label {
       font-size: 13px;
