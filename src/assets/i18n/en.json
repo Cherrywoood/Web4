@@ -1,0 +1,46 @@
+{
+  "AUTHENTICATION_FORM": {
+    "TITLE": {
+      "REGISTRATION": "REGISTRATION",
+      "AUTHENTICATION": "AUTHENTICATION"
+    },
+    "LOGIN": "LOGIN",
+    "PASSWORD": "PASSWORD",
+    "SHOW_PASSWORD": "Show password",
+    "ERROR_REGISTRATION": "THIS LOGIN ALREADY EXISTS!",
+    "ERROR_AUTHENTICATION": "USER DOESN'T EXIST!",
+    "ERROR_VALID": "LOGIN AND PASSWORD MUST CONTAIN AT LEAST 4 SYMBOLS!",
+    "SIGN_IN": "SIGN IN",
+    "SIGN_UP": "SIGN UP"
+  },
+  "HEADER": {
+    "AUTHORS": "AUTHORS",
+    "AUTHORS_1": "ARSENY NAZARENKO",
+    "AUTHORS_2": "POLINA POPOVA",
+    "GROUP": "GROUP",
+    "UNIVERSITY": "ITMO UNIVERSITY",
+    "LABEL_LANGUAGE": "Choose language",
+    "LANGUAGE": {
+      "EN": "English",
+      "RU": "Russian",
+      "ES": "Spanish"
+    }
+  },
+  "NOT_FOUND": {
+    "BUTTON": "HOME",
+    "HEADING": "OH NO! You're lost.",
+    "MESSAGE": "How did you get here? <br> Come out and come in normally."
+  },
+  "MAIN": {
+    "LOG_OUT_TEXT": "CLOSE SESSION",
+    "FORM": {
+      "BUTTON": "SEND",
+      "ERROR_RADIUS": "R MUST BE GREATER THAN 0!"
+    },
+    "TABLE": {
+      "TABLE_TH": "Result",
+      "RESULT_FALSE": "MISS",
+      "RESULT_TRUE": "HIT"
+    }
+  }
+}

@@ -10,11 +10,14 @@
       </div>
     </div>
     <div class="coordinate" id="r">
-      <label>R: <input name="r" formControlName="rField" placeholder="[1,5]"></label>
+      <label>R: <input name="r" formControlName="rField" placeholder="[-5,5]"></label>
+    </div>
+    <div class="error-message" *ngIf="error">
+      {{error}}
     </div>
     <div class="button">
       <button id='send' class="btn border" [disabled]="form.invalid">
-        SEND
+        {{"MAIN.FORM.BUTTON" | translate}}
       </button>
     </div>
   </div>

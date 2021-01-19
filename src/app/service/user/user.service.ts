@@ -3,24 +3,26 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {User} from '../../models/user';
 import {JwtHelperService} from '@auth0/angular-jwt';
+import {TranslateService} from '@ngx-translate/core';
+import {LanguageService} from '../language.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
   private header = new HttpHeaders().set('Content-Type', 'application/json');
-  constructor(private http: HttpClient, private jwtHelper: JwtHelperService) {}
+  constructor(private http: HttpClient, private jwtHelper: JwtHelperService, private language: LanguageService) {}
 
   signIn(user: User): Observable<{token: string}> {
     const body = JSON.stringify(user);
-    console.log(body);
-    return this.http.post<{token: string}>('http://localhost:8080/auth', body, {headers: this.header});
+    this.header = this.header.set('Language', this.language.getLanguage());
+    return this.http.post<{token: string}>('http://localhost:11600/auth', body, {headers: this.header});
   }
 
   signUp(user: User): Observable<any> {
     const body = JSON.stringify(user);
-    console.log(body);
-    return this.http.post('http://localhost:8080/register', body, {headers: this.header});
+    this.header = this.header.set('Language', this.language.getLanguage());
+    return this.http.post('http://localhost:11600/register', body, {headers: this.header});
   }
 
   isAuth(): boolean {

@@ -1,0 +1,46 @@
+{
+  "AUTHENTICATION_FORM": {
+    "TITLE": {
+      "REGISTRATION": "REGISTRO",
+      "AUTHENTICATION": "AUTENTICACIÓN"
+    },
+    "LOGIN": "NOMBRE",
+    "PASSWORD": "CONTRASEÑA",
+    "SHOW_PASSWORD": "Mostrar contraseña",
+    "ERROR_REGISTRATION": "¡ESTE INICIO DE SESIÓN YA EXISTE!",
+    "ERROR_AUTHENTICATION": "¡EL USUARIO NO EXISTE!",
+    "ERROR_VALID": "¡EL INICIO DE SESIÓN Y LA CONTRASEÑA DEBEN CONTENER AL MENOS 4 SÍMBOLOS!",
+    "SIGN_IN": "INICIAR SESIÓN",
+    "SIGN_UP": "REGÍSTRATE"
+  },
+  "HEADER": {
+    "AUTHORS": "AUTORES",
+    "AUTHORS_1": "ARSENY NAZARENKO",
+    "AUTHORS_2": "POLINA POPOVA",
+    "GROUP": "GRUPO",
+    "UNIVERSITY": "UNIVERSIDAD ITMO",
+    "LABEL_LANGUAGE": "Elige lengua",
+    "LANGUAGE": {
+      "EN": "Inglés",
+      "RU": "Ruso",
+      "ES": "Español"
+    }
+  },
+  "NOT_FOUND": {
+    "BUTTON": "CASA",
+    "HEADING": "¡OH NO! Estás perdido.",
+    "MESSAGE": "¿Cómo llegaste aquí? <br> Sal y entra normalmente"
+  },
+  "MAIN": {
+    "LOG_OUT_TEXT": "CERRAR LA SESIÓN",
+    "FORM": {
+      "BUTTON": "ENVIAR",
+      "ERROR_RADIUS": "¡R DEBE SER MAYOR QUE 0!"
+    },
+    "TABLE": {
+      "TABLE_TH": "Resultado",
+      "RESULT_FALSE": "Miss",
+      "RESULT_TRUE": "Hit"
+    }
+  }
+}

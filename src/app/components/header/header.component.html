@@ -1,8 +1,16 @@
 <header>
   <div class="text">
-    AUTHORS: <a href="https://github.com/arsnazarenko">АРСЕНИЙ НАЗАРЕНКО</a> &
-    <a href="https://github.com/Cherrywood6918">ПОЛИНА ПОПОВА</a> <br>
-    GROUP: P3232, ITMO UNIVERSITY <br>
+    {{'HEADER.AUTHORS' | translate}}: <a href="https://github.com/arsnazarenko">{{'HEADER.AUTHORS_1' | translate}}</a> &
+    <a href="https://github.com/Cherrywood6918">{{'HEADER.AUTHORS_2' | translate}}</a> <br>
+    {{'HEADER.GROUP' | translate}}: P3232, {{'HEADER.UNIVERSITY' | translate}} <br>
     28213
+  </div>
+  <div class="select">
+   <label for="langSelect">{{'HEADER.LABEL_LANGUAGE' | translate}}</label><br>
+    <select id="langSelect" #selectList (change)="useLanguage(selectList.selectedIndex)">
+      <option>{{'HEADER.LANGUAGE.EN' | translate}}</option>
+      <option>{{'HEADER.LANGUAGE.RU' | translate}}</option>
+      <option>{{'HEADER.LANGUAGE.ES' | translate}}</option>
+    </select>
   </div>
 </header>

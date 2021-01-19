@@ -1,18 +1,18 @@
 <table>
   <thead>
   <tr>
-    <th>X</th>
-    <th>Y</th>
-    <th>R</th>
-    <th>Result</th>
+    <th class="col-1">X</th>
+    <th class="col-2">Y</th>
+    <th class="col-3">R</th>
+    <th class="col-4">{{"MAIN.TABLE.TABLE_TH" | translate}}</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngFor="let point of points">
-    <td>{{point.x | number:'1.0-4'}}</td>
-    <td>{{point.y | number: '1.0-4'}}</td>
-    <td>{{point.r | number:'1.0-4'}}</td>
-    <td>{{point.result}}</td>
+    <td class="col-1">{{ point.x | number:'1.0-4': locale}}</td>
+    <td class="col-2">{{point.y | number: '1.0-4': locale}}</td>
+    <td class="col-3">{{point.r | number:'1.0-4': locale}}</td>
+    <td class="col-4">{{this.resultTable(point.result)}}</td>
   </tr>
   </tbody>
 </table>

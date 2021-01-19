@@ -1,27 +1,29 @@
 <form [formGroup]="form" novalidate>
   <div class="form-content">
     <div class="title">
-      <span>REGISTRATION
+      <span>{{'AUTHENTICATION_FORM.TITLE.REGISTRATION' | translate}}
       <br> & <br>
-      AUTHENTICATION</span>
+        {{'AUTHENTICATION_FORM.TITLE.AUTHENTICATION' | translate}}</span>
     </div>
     <div class="field">
-      <input formControlName="login" name="login" placeholder="LOGIN">
+      <input type=text formControlName="login" name="login" placeholder="{{'AUTHENTICATION_FORM.LOGIN' | translate}}">
     </div>
     <div class="field">
-      <input [attr.type]="type" formControlName="password" name="password" placeholder="PASSWORD"><br>
-      <label><input type="checkbox" (click)="show_hide_password()"
-                    formControlName="check" class="check"> Показать пароль</label>
+      <input [attr.type]="type" formControlName="password" name="password" placeholder="{{'AUTHENTICATION_FORM.PASSWORD' | translate}}"><br>
+      <div>
+        <label><input type="checkbox" (click)="showHidePassword()"
+                      formControlName="check" class="check"> {{'AUTHENTICATION_FORM.SHOW_PASSWORD' | translate}}</label>
+      </div>
     </div>
     <div class="error-message" *ngIf="error">
       {{error}}
     </div>
     <div class="buttons-container">
       <div id="sign-in" class="button">
-        <button id='auth' class="btn border" [disabled]="form.invalid" (click)="signIn()">SIGN IN </button>
+        <button id='auth' class="btn border" [disabled]="form.invalid" (click)="signIn()">{{'AUTHENTICATION_FORM.SIGN_IN' | translate}}</button>
       </div>
       <div id="sign-up" class="button">
-        <button id='reg' class="btn border" [disabled]="form.invalid" (click)="signUp()">SIGN UP</button>
+        <button id='reg' class="btn border" [disabled]="form.invalid" (click)="signUp()">{{'AUTHENTICATION_FORM.SIGN_UP' | translate}}</button>
       </div>
     </div>
   </div>

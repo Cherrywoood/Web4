@@ -2,6 +2,8 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import { Subscription } from 'rxjs';
 import {Point} from '../../models/point';
 import {PointService} from '../../service/point/point.service';
+import {TranslateService} from '@ngx-translate/core';
+import {LanguageService} from "../../service/language.service";
 
 @Component({
   selector: 'app-table',
@@ -10,18 +12,33 @@ import {PointService} from '../../service/point/point.service';
 })
 export class TableComponent implements OnInit, OnDestroy{
   points: Point[] = [];
-  subPoints: Subscription | undefined;
-  constructor(private httpPoint: PointService) {
+  locale: string;
+  pointsSub: Subscription | undefined;
+  localeSub: Subscription | undefined;
+  constructor(private httpPoint: PointService, private translate: TranslateService,
+              private language: LanguageService) {
+    this.locale = this.language.getLanguage();
   }
 
   ngOnInit(): void {
-    this.subPoints = this.httpPoint.point.subscribe(point => {
+    this.pointsSub = this.httpPoint.point.subscribe(point => {
+      console.log('point');
       this.points.push(point);
     });
   }
+  resultTable(result: boolean): string {
+    if (result) {
+      return this.translate.instant('MAIN.TABLE.RESULT_TRUE');
+    } else {
+      return this.translate.instant('MAIN.TABLE.RESULT_FALSE');
+    }
+  }
 
   ngOnDestroy(): void {
-    if ( this.subPoints !== undefined) { this.subPoints?.unsubscribe(); }
+    if ( this.pointsSub !== undefined) { this.pointsSub?.unsubscribe(); }
+    if (this.localeSub !== undefined) {
+      this.localeSub?.unsubscribe();
+    }
   }
 
 }

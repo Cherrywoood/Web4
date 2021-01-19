@@ -54,29 +54,29 @@ input, button {
 }
 
 input {
-  font-family: 'Century Gothic', serif;
+  font-family: 'Arial', serif;
   border-bottom: solid 3px #000024;
   padding: 5px;
   color: white;
 }
 
 input::-webkit-input-placeholder {
-  font-family: 'Century Gothic', serif;
+  font-family: 'Arial', serif;
   color: white;
 }
 
 input::-moz-placeholder {
-  font-family: 'Century Gothic', serif;
+  font-family: 'Arial', serif;
   color: white;
 }
 
 input:-moz-placeholder {
-  font-family: 'Century Gothic', serif;
+  font-family: 'Arial', serif;
   color: white;
 }
 
 input:-ms-input-placeholder {
-  font-family: 'Century Gothic', serif;
+  font-family: 'Arial', serif;
   color: white;
 }
 
@@ -93,7 +93,7 @@ form input:hover {
 }
 
 form button:disabled {
-opacity: 70%;
+opacity: 50%;
 }
 
 form .btn {
@@ -149,7 +149,7 @@ table {
 
 body {
   letter-spacing: 2px;
-  font-family: 'Century Gothic', serif;
+  font-family: 'Arial', serif;
   background:  #000024;
 }
 

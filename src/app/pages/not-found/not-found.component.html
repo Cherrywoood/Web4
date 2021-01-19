@@ -2,11 +2,9 @@
   <img src="/assets/astronaut.gif" alt="gif">
   <div class="message">
     <h1>404</h1>
-    <h2>OH NO! You're lost.</h2>
-    <p>How did you get here? <br>
-      Come out and come in normally.
-    </p>
-    <button class="btn border" routerLink="">HOME</button>
+    <h2>{{"NOT_FOUND.HEADING" | translate}}</h2>
+    <p [innerHTML]="'NOT_FOUND.MESSAGE' | translate"></p>
+    <button class="btn border" routerLink="">{{"NOT_FOUND.BUTTON" | translate}}</button>
   </div>
 
 </div>

@@ -13,6 +13,7 @@
 span {
   color: #dd1144;
   font-size: 30px;
+  padding: 0 5px;
 }
 
 span:hover {
@@ -40,7 +41,10 @@ app-table {
   }
 
   span {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  span:hover {
+    font-size: 41px;
   }
 
   .svg-and-form {
@@ -51,29 +55,35 @@ app-table {
     margin: 0 20px;
   }
 }
-@media screen and (max-width: 1439px) and (min-width: 680px){
+@media screen and (max-width: 1439px) and (min-width: 760px) {
   span {
-    font-size: 40px;
+    font-size: 30px;
   }
+
   span:hover {
-    font-size: 41px;
+    font-size: 31px;
   }
 
   app-table {
     margin: 50px 50px;
   }
 }
-@media screen and (max-width: 760px){
-  span {
-    font-size: 30px;
-  }
-  span:hover {
-    font-size: 31px;
-  }
-}
-@media screen and (max-width: 679px){
+@media screen and (max-width: 759px){
   app-table {
     margin: 10px 0;
+  }
+  span {
+    font-size: 25px;
+  }
+  span:hover {
+    font-size: 26px;
+  }
+
+  .svg-and-form {
+    flex-flow: column;
+  }
+  .link-content {
+    margin: 25px 0;
   }
 
 }

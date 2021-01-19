@@ -4,6 +4,7 @@ import {UserService} from '../../service/user/user.service';
 import {User} from '../../models/user';
 import {Router} from '@angular/router';
 import {Subscription} from 'rxjs';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-authentication-form',
@@ -16,7 +17,10 @@ export class AuthenticationFormComponent implements OnInit, OnDestroy {
   error: string | undefined;
   signInSub: Subscription | undefined;
   signUpSub: Subscription | undefined;
-  constructor(formBuilder: FormBuilder, private httpUser: UserService, private router: Router) {
+  errorSub: Subscription | undefined;
+
+  constructor(formBuilder: FormBuilder, private httpUser: UserService,
+              private router: Router, private translate: TranslateService) {
     this.form = formBuilder.group({
       login: [null, [Validators.required]],
       password: [null, [Validators.required]],
@@ -38,10 +42,9 @@ export class AuthenticationFormComponent implements OnInit, OnDestroy {
         },
         error => {
           console.log(error);
-          if (error.status === 401){
-            this.error = 'USER DOESN\'T EXIST!';
-          }
-        });
+          if (error.status === 401) {
+            this.setError('AUTHENTICATION_FORM.ERROR_AUTHENTICATION');
+        }});
   }
 
   signUp(): void {
@@ -49,14 +52,20 @@ export class AuthenticationFormComponent implements OnInit, OnDestroy {
       .subscribe(
         (data: any) => {
           console.log(data);
-          if (data.status === 'SUCCESS') {
-            this.signIn();
-         } else { this.error = 'THIS LOGIN ALREADY EXISTS!'; }
+          this.signIn();
         },
-        error => console.log(error));
+        error => {
+          console.log(error);
+          if (error.status === 409) {
+            this.setError('AUTHENTICATION_FORM.ERROR_REGISTRATION');
+          }
+          if (error.status === 400) {
+            this.setError('AUTHENTICATION_FORM.ERROR_VALID');
+          }
+        });
   }
 
-  show_hide_password(): void {
+  showHidePassword(): void {
     console.log(!this.form.get('check')?.value);
     if (!this.form.get('check')?.value) {
       this.type = 'text';
@@ -65,8 +74,20 @@ export class AuthenticationFormComponent implements OnInit, OnDestroy {
     }
   }
 
+  setError(error: string): void {
+    this.errorSub = this.translate.stream(error)
+      .subscribe(translation => this.error = translation);
+  }
+
   ngOnDestroy(): void {
-    if (this.signInSub !== undefined) { this.signInSub?.unsubscribe(); }
-    if (this.signUpSub !== undefined) { this.signUpSub?.unsubscribe(); }
+    if (this.signInSub !== undefined) {
+      this.signInSub?.unsubscribe();
+    }
+    if (this.signUpSub !== undefined) {
+      this.signUpSub?.unsubscribe();
+    }
+    if (this.errorSub !== undefined) {
+      this.errorSub?.unsubscribe();
+    }
   }
 }

@@ -30,13 +30,27 @@ form label {
 
 .slider {
   margin-top: 10px;
-  width: 90%;
+  width: 200px;
   margin-left: 10%;
 }
 
+.coordinate {
+  width: 100%;
+}
+input {
+  width: 200px;
+}
 .button {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.error-message{
+  text-align: center;
+  color: darkred;
+  font-weight: bold;
+  font-size: 11px;
+
 }
 

@@ -27,7 +27,7 @@ form {
   color: #000024;
 }
 
-.field{
+.field {
   text-align: center;
 }
 
@@ -39,264 +39,381 @@ label {
   text-align: center;
   font-weight: bold;
 }
+
 .button {
   text-align: center;
 }
 
-.error-message{
+.error-message {
   text-align: center;
   color: darkred;
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) and (max-height: 899px){
-  :host {
-    width: 240px;
+@media screen and (min-width: 760px) {
+  @media screen and (min-height: 1200px) {
+    :host {
+      width: 600px;
+    }
+
+    .form-content {
+      padding: 70px 20px;
+    }
+
+    .title {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    .field {
+      margin: 20px;
+      text-align: center;
+    }
+
+    input {
+      font-size: 30px;
+    }
+
+    .check {
+      margin-top: 15px;
+    }
+
+    label {
+      font-size: 24px;
+    }
+
+    #sign-in {
+      margin-top: 20px;
+      margin-bottom: 3px;
+    }
+
+    #sign-up {
+      margin-bottom: 20px;
+      margin-top: 3px;
+    }
+
+    .error-message {
+      padding: 5px;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 26px;
+      width: 400px;
+      height: 60px;
+    }
+  }
+  @media screen and (min-height: 800px) and (max-height: 1199px) {
+    :host {
+      width: 420px;
+    }
+
+    .form-content {
+      padding: 49px 14px;
+    }
+
+    .title {
+      font-size: 25px;
+      margin-bottom: 28px;
+    }
+
+    .field {
+      margin: 14px;
+      text-align: center;
+    }
+
+    input {
+      font-size: 21px;
+    }
+
+    .check {
+      margin-top: 11px;
+    }
+
+    label {
+      font-size: 17px;
+    }
+
+    #sign-in {
+      margin-top: 14px;
+      margin-bottom: 2px;
+    }
+
+    #sign-up {
+      margin-bottom: 14px;
+      margin-top: 2px;
+    }
+
+    .error-message {
+      padding: 4px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 18px;
+      width: 280px;
+      height: 42px;
+    }
   }
 
-  .form-content {
-    padding: 40px 0;
-  }
+  @media screen and (max-height: 799px) {
+    :host {
+      width: 300px;
+    }
 
-  .title {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
+    .form-content {
+      padding: 35px 15px;
+    }
 
-  .field{
-    margin: 8px;
-  }
+    .title {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
 
-  input {
-    font-size: 14px;
-  }
-  .check {
-    margin-top: 5px;
-  }
-  label {
-    font-size: 11px;
-  }
-  #sign-in {
-    margin-top: 5px;
-    margin-bottom: 3px;
-  }
+    .field {
+      margin: 8px;
+      text-align: center;
+    }
 
-  #sign-up {
-    margin-bottom: 5px;
-    margin-top: 3px;
-  }
+    input {
+      font-size: 15px;
+    }
 
-  .error-message{
-    padding: 3px;
-    font-size: 12px;
-    width: 200px;
-  }
+    .check {
+      margin-top: 6px;
+    }
 
-  .btn {
-    font-size: 14px;
+    label {
+      font-size: 12px;
+    }
 
+    #sign-in {
+      margin-top: 8px;
+      margin-bottom: 3px;
+    }
+
+    #sign-up {
+      margin-bottom: 8px;
+      margin-top: 3px;
+    }
+
+    .error-message {
+      padding: 2px;
+      font-size: 10px;
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 10px;
+      width: 180px;
+      height: 35px;
+    }
+
+    @media screen and (max-height: 599px) {
+      :host {
+        margin: 50px;
+      }
+    }
   }
 }
 
-@media screen and (min-height: 1200px){
-  :host {
-    width: 600px;
-    height: 800px;
-  }
-  .form-content {
-    padding: 100px;
-  }
-
-  .title {
-    font-size: 35px;
-    margin-bottom: 40px;
+@media screen and (max-width: 759px) {
+  :host{
+    background: #dd1144;
+    border-radius: 0;
+    outline: none;
+    outline-offset: 0;
+    margin-top: 5px;
+    border-top: 1px white solid;
   }
 
-  .field{
-    margin: 20px;
-    text-align: center;
-  }
-  input {
-    font-size: 26px;
-  }
-
-  .check {
-    margin-top: 15px;
-  }
-  label {
-    font-size: 24px;
-  }
-  #sign-in {
-    margin-top: 20px;
-    margin-bottom: 3px;
-  }
-
-  #sign-up {
-    margin-bottom: 20px;
-    margin-top: 3px;
-  }
-
-  .error-message{
-    padding: 5px;
-    font-size: 30px;
-  }
-
-  .btn {
-    font-size: 26px;
-    width: 300px;
-    height: 60px;
-  }
-
-
-  @media screen and (max-width: 760px){
+  @media screen and (min-height: 1200px) {
     :host {
-      width: 70%;
+      width: 100%;
       min-width: 500px;
+      margin: 0;
+    }
+
+    .form-content {
+      padding: 15px 40px;
+    }
+
+    .title {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    .field {
+      margin: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    input[type=text], input[type=password] {
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .check {
+      margin-top: 15px;
+    }
+
+    label {
+      font-size: 26px;
+    }
+
+    #sign-in {
+      margin-top: 20px;
+      margin-bottom: 3px;
+    }
+
+    #sign-up {
+      margin-bottom: 20px;
+      margin-top: 3px;
+    }
+
+    .error-message {
+      padding: 5px;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 26px;
+      width: 100%;
+      height: 60px;
+    }
+
+    .buttons-container {
+      width: 100%;
     }
   }
-
-}
-
-@media screen and (min-height: 900px) and (max-height: 1199px){
-  :host {
-    width: 400px;
-    height: 600px;
-  }
-  .form-content {
-    padding: 100px;
-  }
-
-  .title {
-    font-size: 30px;
-    margin-bottom: 35px;
-  }
-
-  .field{
-    margin: 15px;
-  }
-  input {
-    font-size: 21px;
-  }
-
-  .check {
-    margin-top: 15px;
-  }
-  label {
-    font-size: 18px;
-  }
-  #sign-in {
-    margin-top: 15px;
-    margin-bottom: 3px;
-  }
-
-  #sign-up {
-    margin-bottom: 15px;
-    margin-top: 3px;
-  }
-
-  .error-message{
-    padding: 5px;
-    font-size: 25px;
-  }
-
-  .btn {
-    font-size: 20px;
-    width: 250px;
-
-  }
-
-  @media screen and (max-width: 760px){
+  @media screen and (min-height: 800px) and (max-height: 1199px) {
     :host {
-      min-width: 400px;
+      width: 100%;
+      min-width: 300px;
+      margin: 0;
+    }
+
+    .form-content {
+      padding: 15px 28px;
+    }
+
+    .title {
+      font-size: 25px;
+      margin-bottom: 28px;
+    }
+
+    .field {
+      margin: 14px;
+      text-align: center;
+      width: 100%;
+    }
+
+    input[type=text], input[type=password] {
+      font-size: 21px;
+      width: 100%;
+    }
+
+    .check {
+      margin-top: 11px;
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    #sign-in {
+      margin-top: 14px;
+      margin-bottom: 3px;
+    }
+
+    #sign-up {
+      margin-bottom: 14px;
+      margin-top: 3px;
+    }
+
+    .error-message {
+      padding: 5px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 18px;
+      width: 100%;
+      height: 42px;
+    }
+
+    .buttons-container {
+      width: 100%;
     }
   }
-}
 
-@media screen and (min-height: 600px) and (max-height: 899px) and (min-width: 500px){
-  .form-content {
-    padding: 50px;
-  }
+  @media screen and (max-height: 799px) {
+    :host {
+      width: 100%;
+      min-width: 300px;
+      margin: 0;
+    }
 
-  .title {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+    .form-content {
+      padding: 15px 28px;
+    }
 
-  .field{
-    margin: 10px;
-  }
+    .title {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
 
-  .check {
-    margin-top: 5px;
-  }
-  label {
-    font-size: 15px;
-  }
-  #sign-in {
-    margin-top: 10px;
-    margin-bottom: 3px;
-  }
+    .field {
+      margin: 8px;
+      text-align: center;
+      width: 100%;
+    }
 
-  #sign-up {
-    margin-bottom: 10px;
-    margin-top: 3px;
-  }
+    input[type=text], input[type=password] {
+      font-size: 15px;
+      width: 100%;
+    }
 
-  .error-message{
-    padding: 3px;
-    font-size: 12px;
-  }
+    .check {
+      margin-top: 6px;
+    }
 
-}
+    label {
+      font-size: 13px;
+    }
 
-@media screen and (min-width: 500px) and (max-height: 599px)  {
-  :host {
-    width: 400px;
-    height: 300px;
-  }
+    #sign-in {
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
 
-  .form-content {
-    padding: 50px;
-  }
+    #sign-up {
+      margin-bottom: 8px;
+      margin-top: 2px;
+    }
 
-  .title {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
+    .error-message {
+      padding: 3px;
+      font-size: 10px;
+      width: 100%;
+    }
 
-  .field{
-    margin: 6px;
-  }
+    .btn {
+      font-size: 12px;
+      width: 100%;
+      height: 34px;
+    }
 
-  .check {
-    margin-top: 5px;
-  }
-  label {
-    font-size: 12px;
-  }
-  #sign-in {
-    margin-top: 3px;
-    margin-right: 5px;
-  }
-
-  #sign-up {
-    margin-top: 3px;
-    margin-left: 5px;;
-  }
-
-  .error-message{
-    font-size: 12px;
-    padding: 3px;
-  }
-
-  .buttons-container {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    .buttons-container {
+      width: 100%;
+    }
   }
 
 }
-
-
 
 

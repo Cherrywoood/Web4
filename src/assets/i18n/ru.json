@@ -1,0 +1,46 @@
+{
+  "AUTHENTICATION_FORM": {
+    "TITLE": {
+      "REGISTRATION": "РЕГИСТРАЦИЯ",
+      "AUTHENTICATION": "АУТЕНТИФИКАЦИЯ"
+    },
+    "LOGIN": "ЛОГИН",
+    "PASSWORD": "ПАРОЛЬ",
+    "SHOW_PASSWORD": "Показать пароль",
+    "ERROR_REGISTRATION": "ЭТОТ ЛОГИН УЖЕ СУЩЕСТВУЕТ!",
+    "ERROR_AUTHENTICATION": "ПОЛЬЗОВАТЕЛЬ НЕ СУЩЕСТВУЕТ!",
+    "ERROR_VALID": "ЛОГИН И ПАРОЛЬ ДОЛЖНЫ СОДЕРЖАТЬ НЕ МЕНЕЕ 4 СИМВОЛОВ!",
+    "SIGN_IN": "ВОЙТИ В СИСТЕМУ",
+    "SIGN_UP": "ЗАРЕГИСТРИРОВАТЬСЯ"
+  },
+  "HEADER": {
+    "AUTHORS": "АВТОРЫ",
+    "AUTHORS_1": "АРСЕНИЙ НАЗАРЕНКО",
+    "AUTHORS_2": "ПОЛИНА ПОПОВА",
+    "GROUP": "ГРУППА",
+    "UNIVERSITY": "УНИВЕРСИТЕТ ИТМО",
+    "LABEL_LANGUAGE": "Выберите язык",
+    "LANGUAGE": {
+      "EN": "Английский",
+      "RU": "Русский",
+      "ES": "Испанский"
+    }
+  },
+  "NOT_FOUND": {
+    "BUTTON": "ДОМОЙ",
+    "HEADING": "О, НЕТ! Ты потерялся.",
+    "MESSAGE": "Как ты сюда попал? <br> Выйди и зайди нормально"
+  },
+  "MAIN": {
+    "LOG_OUT_TEXT": "ЗАКРЫТЬ СЕССИЮ",
+    "FORM": {
+      "BUTTON": "ОТПРАВИТЬ",
+      "ERROR_RADIUS": "R ДОЛЖЕН БЫТЬ БОЛЬШЕ 0!"
+    },
+    "TABLE": {
+      "TABLE_TH": "Результат",
+      "RESULT_FALSE": "Промах",
+      "RESULT_TRUE": "Попадение"
+    }
+  }
+}
