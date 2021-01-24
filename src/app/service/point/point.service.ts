@@ -28,7 +28,7 @@ export class PointService {
   }
 
   doGet(): void {
-    this.header = this.header.set('Language', this.language.getLanguage());
+    this.header = this.header.set('Accept-Language', this.language.getLanguage());
     this.http.get('http://localhost:11600/point', {headers: this.header}).subscribe(
       (data: any) => data.forEach((point: any) => this.point.next(point)),
       error => console.log(error));
