@@ -3,6 +3,7 @@ import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Point} from '../../models/point';
 import {PointService} from '../../service/point/point.service';
 import {Subscription} from 'rxjs';
+import {LanguageService} from "../../service/language.service";
 
 @Component({
   selector: 'app-svg',
@@ -14,7 +15,7 @@ export class SvgComponent implements OnInit, OnDestroy{
   rValid: boolean;
   points: Point[] = [];
   subPoints: Subscription | undefined;
-  constructor(private httpPoint: PointService) {
+  constructor(private httpPoint: PointService, private language: LanguageService) {
     this.rField = 1;
     this.rValid = true;
   }
@@ -35,13 +36,13 @@ export class SvgComponent implements OnInit, OnDestroy{
       const basis = 100 / radius;
       const cx = ((x - 150) / basis);
       const cy = ((150 - y) / basis);
-      console.log('SEND');
+      console.log(this.language.getLogMessage('LOG.SEND'));
       this.httpPoint.doPost({x: cx, y: cy, r: radius});
     }
   }
 
   point_draw(point: Point): void {
-    console.log('DRAW POINT');
+    console.log(this.language.getLogMessage('LOG.DRAW_POINT'));
     if (point.r === this.rField) {
       const x = point.x * 100 / point.r + 150;
       const y = 150 - point.y * 100 / point.r;
@@ -65,7 +66,7 @@ export class SvgComponent implements OnInit, OnDestroy{
   redraw(radius: any): void {
     this.rField = Number(radius.r);
     this.rValid = radius.valid;
-    console.log('REDRAW');
+    console.log(this.language.getLogMessage('LOG.REDRAW'));
     this.removePoints();
     this.points.forEach(point => this.point_draw(point));
   }

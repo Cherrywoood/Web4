@@ -41,5 +41,10 @@
       "RESULT_FALSE": "Miss",
       "RESULT_TRUE": "Hit"
     }
+  },
+  "LOG": {
+    "SEND": "ENVIANDO",
+    "DRAW_POINT": "DIBUJO",
+    "REDRAW": "REDIBUJAR"
   }
 }

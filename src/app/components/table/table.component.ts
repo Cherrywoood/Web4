@@ -22,7 +22,6 @@ export class TableComponent implements OnInit, OnDestroy{
 
   ngOnInit(): void {
     this.pointsSub = this.httpPoint.point.subscribe(point => {
-      console.log('point');
       this.points.push(point);
     });
   }

@@ -66,7 +66,6 @@ export class AuthenticationFormComponent implements OnInit, OnDestroy {
   }
 
   showHidePassword(): void {
-    console.log(!this.form.get('check')?.value);
     if (!this.form.get('check')?.value) {
       this.type = 'text';
     } else {

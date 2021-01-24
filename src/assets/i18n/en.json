@@ -41,5 +41,10 @@
       "RESULT_FALSE": "MISS",
       "RESULT_TRUE": "HIT"
     }
+  },
+  "LOG": {
+    "SEND": "SEND",
+    "DRAW_POINT": "DRAW POINT",
+    "REDRAW": "REDRAW"
   }
 }
