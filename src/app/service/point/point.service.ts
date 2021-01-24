@@ -18,7 +18,7 @@ export class PointService {
 
   doPost(point: object): void {
     console.log(point);
-    this.header = this.header.set('Language', this.language.getLanguage());
+    this.header = this.header.set('Accept-Language', this.language.getLanguage());
     this.http.post('http://localhost:11600/point', point, {headers: this.header}).subscribe(
       (data: any) => this.point.next(data),
       error => {

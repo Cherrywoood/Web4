@@ -51,7 +51,7 @@ registerLocaleData(localeEs);
       config: {
         tokenGetter: () => localStorage.getItem('token'),
         allowedDomains: ['localhost:11600'],
-        disallowedRoutes: ['http://localhost:4200/login'],
+        disallowedRoutes: ['http://localhost:11600/login'],
         skipWhenExpired: true
       }
     }),

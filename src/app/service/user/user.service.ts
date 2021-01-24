@@ -15,13 +15,13 @@ export class UserService {
 
   signIn(user: User): Observable<{token: string}> {
     const body = JSON.stringify(user);
-    this.header = this.header.set('Language', this.language.getLanguage());
+    this.header = this.header.set('Accept-Language', this.language.getLanguage());
     return this.http.post<{token: string}>('http://localhost:11600/auth', body, {headers: this.header});
   }
 
   signUp(user: User): Observable<any> {
     const body = JSON.stringify(user);
-    this.header = this.header.set('Language', this.language.getLanguage());
+    this.header = this.header.set('Accept-Language', this.language.getLanguage());
     return this.http.post('http://localhost:11600/register', body, {headers: this.header});
   }
 
