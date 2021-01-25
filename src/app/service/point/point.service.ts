@@ -10,7 +10,7 @@ import {LanguageService} from '../language.service';
 })
 export class PointService {
   point = new Subject<Point>();
-  error = new Subject<HttpErrorResponse>();
+  error = new Subject<HttpErrorResponse|null>();
   private header = new HttpHeaders().set('Content-Type', 'application/json');
 
 
@@ -20,9 +20,11 @@ export class PointService {
     console.log(point);
     this.header = this.header.set('Accept-Language', this.language.getLanguage());
     this.http.post('http://localhost:11600/point', point, {headers: this.header}).subscribe(
-      (data: any) => this.point.next(data),
+      (data: any) => {
+        this.point.next(data);
+        this.error.next(null);
+      },
       error => {
-        console.log(error);
         this.error.next(error);
       });
   }

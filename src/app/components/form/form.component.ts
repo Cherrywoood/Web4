@@ -13,7 +13,7 @@ import {LanguageService} from '../../service/language.service';
 })
 export class FormComponent implements OnInit, OnDestroy{
   form: FormGroup;
-  error: string | undefined;
+  error: string | undefined | null;
   errorSub: Subscription | undefined;
   @Output() radius: EventEmitter<object> = new EventEmitter<object>();
   constructor(private formBuilder: FormBuilder, private httpPoint: PointService,
@@ -30,8 +30,13 @@ export class FormComponent implements OnInit, OnDestroy{
       this.radius.emit({r: this.form.get('rField')?.value, valid: this.form.get('rField')?.valid});
     });
     this.httpPoint.error.subscribe(error => {
-      if (error.status === 400) {
-        this.setError('MAIN.FORM.ERROR_RADIUS');
+      console.log(error);
+      if (error != null) {
+        if (error.status === 404) {
+          this.setError('MAIN.FORM.ERROR_RADIUS');
+        }
+      } else {
+        this.error = null;
       }
     });
   }
